@@ -9,8 +9,19 @@ public class EmployeeWage {
     static final int IS_PART_TIME = 1;
     static final int WORKING_DAY_PER_MONTH = 20;
 
+    static final int WORKING_HOUR_PER_MONTH = 100;
+
     public static void main(String[] args) {
         System.out.println("Welcome to employee wage computation program");
+        computeEmpWage();
+    }
+
+    public static int computeEmpWage() {
+
+
+    public static void main(String[] args) {
+        System.out.println("Welcome to employee wage computation program");
+
         int empPresent = (int) (Math.floor(Math.random() * 10) % 3);
         int dayCount = 1;
         while (dayCount <= WORKING_DAY_PER_MONTH) {
@@ -31,5 +42,11 @@ public class EmployeeWage {
             System.out.println("Employee daily wage: " + dayCount + " =>" + empWage);
             dayCount++;
         }
+
+        System.out.println("working Hours: " + workingHours);
+        System.out.println("Total wage: " + totalWage);
+        return totalWage;
+
+
     }
 }
