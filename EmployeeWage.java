@@ -13,6 +13,12 @@ public class EmployeeWage {
 
     public static void main(String[] args) {
         System.out.println("Welcome to employee wage computation program");
+
+
+    static final int WORKING_HOUR_PER_MONTH = 100;
+
+    public static void main(String[] args) {
+        System.out.println("Welcome to employee wage computation program");
         computeEmpWage();
     }
 
@@ -45,7 +51,10 @@ public class EmployeeWage {
 
         System.out.println("working Hours: " + workingHours);
         System.out.println("Total wage: " + totalWage);
+
+
         return totalWage;
+
 
 
     }
